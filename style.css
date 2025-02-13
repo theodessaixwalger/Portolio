@@ -67,7 +67,8 @@ nav a.active {
 @media (max-width: 995px) {
   nav {
     position: absolute;
-    top: 100%;
+    display: none;
+    top: 0;
     right: 0;
     width: 40%;
     border-left: 3px solid #b74b4b;
@@ -123,6 +124,10 @@ span {
   font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: 700;
+}
+
+.home-content p {
+  font-size: 1.6rem;
 }
 
 .home-img {
@@ -262,7 +267,7 @@ span {
   }
 
   .home-img img {
-    width: 70vh;
+    width: 70vw;
     margin-top: 4rem;
   }
 }
