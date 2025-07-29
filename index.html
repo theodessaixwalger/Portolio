@@ -3,40 +3,434 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
+
   <body>
     <header>
-      <a href="#" class="logo">Théo</a>
-      <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+      <a href="#" class="logo">Théo Dessaix-Walger</a>
+      <div class="menu-btn">
+        <span class="menu-btn-burger"></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-item">Accueil</a>
+        <a href="#études" class="nav-item">Études</a>
+        <a href="#compétences" class="nav-item">Compétences</a>
+        <a href="#projets" class="nav-item">Projets</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
     </header>
-    <section class="home">
+
+    <section class="home" id="home">
       <div class="home-img">
         <img src="logo.png" alt="" />
       </div>
       <div class="home-content">
-        <h1>Hi, It's<span>Théo</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
+        <h1>Bonjour, c'est <span>Théo</span></h1>
+        <h3 class="typing-text">Je suis un <span></span></h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          sint aliquam esse, sequi sed dolorem quia! Earum provident mollitia
-          dicta repellat ullam commodi tempore quisquam aspernatur, corrupti,
-          inventore, hic id?
+          Créatif et passionné, je conçois et développe des sites web
+          sur-mesure, alliant design moderne, expérience utilisateur optimale et
+          fonctionnalités innovantes pour accompagner chaque projet vers le
+          succès.
         </p>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/th%C3%A9o-dessaix-walger/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/theodessaixwalger"><i class="fa-brands fa-github"></i></a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/th%C3%A9o-dessaix-walger/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/theodessaixwalger"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
-        <a href="#" class="btn">Hire me</a>
+        <a href="#contact" class="btn">Me contacter</a>
       </div>
     </section>
+
+    <section class="études" id="études">
+      <h2 class="heading">Études</h2>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021-2023</div>
+          <div class="timeline-content">
+            <h3>BTS Conception et réalisations de systèmes automatiques</h3>
+            <p>
+              Attiré par les défis de l’industrie automatisée, j’ai choisi un
+              BTS CRSA, développant mes compétences en conception, réalisation
+              et maintenance de systèmes automatisés pour accompagner la
+              transformation des processus industriels.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">sept 2023 - Jan 2024</div>
+          <div class="timeline-content">
+            <h3>Licence Pro Robotique</h3>
+            <p>
+              Passionné par l’innovation technologique, j’ai intégré une licence
+              professionnelle robotique, approfondissant la programmation,
+              l’automatisation et la conception de systèmes intelligents pour
+              répondre aux défis industriels de demain.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mars - Avril 2024</div>
+          <div class="timeline-content">
+            <h3>Piscine École 42</h3>
+            <p>
+              Déterminé à relever des défis complexes, j’ai participé à la
+              piscine de l’école 42, une immersion intensive en programmation
+              qui m’a permis de développer rigueur, créativité et esprit
+              d’équipe dans un environnement résolument innovant.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Octobre 2024 - En cours</div>
+          <div class="timeline-content">
+            <h3>Epitech</h3>
+            <p>
+              Attiré par l’excellence en informatique, j’ai intégré Epitech afin
+              d’acquérir une expertise approfondie en développement logiciel,
+              gestion de projets technologiques et résolution de problématiques
+              innovantes du numérique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="compétences" id="compétences">
+      <div class="section-title">
+        <h2 class="heading">Compétences</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-html.png" />
+          </div>
+          <h3 class="skill-title">HTML5</h3>
+          <p class="skill-description">
+            Structure sémantique, accessibilité web et bonnes pratiques pour des
+            sites robustes et performants.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill html-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-css.png" />
+          </div>
+          <h3 class="skill-title">CSS3</h3>
+          <p class="skill-description">
+            Interfaces modernes, responsive design et animations fluides pour
+            une expérience utilisateur optimale.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill css-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-js.png" />
+          </div>
+          <h3 class="skill-title">JavaScript</h3>
+          <p class="skill-description">
+            Programmation interactive, manipulation du DOM et développement
+            d'applications web dynamiques.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill js-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-react.png" />
+          </div>
+          <h3 class="skill-title">React.js</h3>
+          <p class="skill-description">
+            Développement d'interfaces utilisateur interactives avec une gestion
+            efficace des états et composants réutilisables.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill reactjs-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-vue.png" />
+          </div>
+          <h3 class="skill-title">Vue.js</h3>
+          <p class="skill-description">
+            Framework progressif pour la création d'interfaces utilisateur avec
+            une architecture flexible et simple à intégrer.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill vuejs-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-figma.png" />
+          </div>
+          <h3 class="skill-title">Figma</h3>
+          <p class="skill-description">
+            Conception UI/UX, prototypage interactif et collaboration en temps
+            réel pour des designs modernes et cohérents.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill figma-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-wordpress.png" />
+          </div>
+          <h3 class="skill-title">WordPress</h3>
+          <p class="skill-description">
+            Création de sites dynamiques, personnalisation de thèmes et
+            développement de plugins pour une gestion optimale.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill wordpress-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-strapi.png" />
+          </div>
+          <h3 class="skill-title">Strapi</h3>
+          <p class="skill-description">
+            CMS headless open-source, qui permet de créer des API
+            personnalisables. Interface admin pour gérer les contenus.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill strapi-level"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="logo-postman.png" />
+          </div>
+          <h3 class="skill-title">Postman</h3>
+          <p class="skill-description">
+            Tester, développer et documenter des API facilement via une
+            interface intuitive. Envoi des requêtes HTTP et analyse les
+            réponses.
+          </p>
+          <div class="skill-level">
+            <div class="level-fill postman-level"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projets" id="projets">
+      <div class="container">
+        <h2 class="heading">Projets</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Capture d'écran Yowl"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h2 class="project-title">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://yowl.ct.ws"
+                  >Yowl<i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </h2>
+              <p class="project-description">
+                Réseau social en ligne permettant de partager du texte, des
+                liens et des photos. Découverte et compréhension du Privacy By
+                Design. Intégration de la gestion de la confidentialité des
+                données utilisateur.
+              </p>
+              <a href="#projet1" class="review-btn">Review Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="soundscape.png"
+              alt="Capture d'écran Faux reveil"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h2 class="project-title">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://soundscape.ct.ws"
+                  >Faux Reveil<i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                  ></i
+                ></a>
+              </h2>
+              <p class="project-description">
+                Design responsive d'un portfolio pour un artiste visuel. Mise en
+                page moderne avec galerie interactive et sections présentant
+                différents styles artistiques.
+              </p>
+              <a href="#projet2" class="review-btn">Review Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Capture d'écran Kways"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h2 class="project-title">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://kways.ct.ws/app"
+                  >Kways<i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </h2>
+              <p class="project-description">
+                Interface de suivi et d'analyse pour le marché des
+                cryptomonnaies. Visualisations dynamiques de données et
+                informations en temps réel sur les tendances du marché.
+              </p>
+              <a href="#projet3" class="review-btn">Review Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Capture d'écran Eden Flor"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h2 class="project-title">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://eden-flor.rf.gd"
+                  >Eden Flor<i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                  ></i
+                ></a>
+              </h2>
+              <p class="project-description">
+                Application de commerce électronique avec interface utilisateur
+                intuitive. Conçue pour une expérience d'achat fluide avec
+                système de panier et de paiement sécurisé.
+              </p>
+              <a href="#projet4" class="review-btn">Review Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="/api/placeholder/400/200"
+              alt="Capture d'écran Festivall"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h2 class="project-title">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://back2festivall.ct.ws"
+                  >Festivall<i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                  ></i
+                ></a>
+              </h2>
+              <p class="project-description">
+                Application de commerce électronique avec interface utilisateur
+                intuitive. Conçue pour une expérience d'achat fluide avec
+                système de panier et de paiement sécurisé.
+              </p>
+              <a href="#projet4" class="review-btn">Review Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading">Contactez <span>Moi!</span></h2>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Nom Prénom"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="Numéro de téléphone"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Objet"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
